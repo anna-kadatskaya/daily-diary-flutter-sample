@@ -39,19 +39,19 @@ workflows:
           email:
             recipients:
               - anna.k@codemagic.io
-        notify:
-          success: true
-          failure: true
-      app_store_connect:
-        auth: integration
+            notify:
+              success: true
+              failure: true
+          app_store_connect:
+            auth: integration
 
         # Configuration related to TestFlight (optional)
         # Note: This action is performed during post-processing.
-        submit_to_testflight: false
+            submit_to_testflight: false
 
         # Configuration related to App Store (optional)
         # Note: This action is performed during post-processing.
-        submit_to_app_store: false
+            submit_to_app_store: false
         
     android-workflow-id:
         name: Android Sample Workflow
