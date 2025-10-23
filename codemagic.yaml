@@ -66,7 +66,7 @@ workflows:
                 flutter pub get
             - name: Build AAB with Flutter
               script: | 
-                flutter build appbundle --release --android-skip-build-dependency-validation
+                flutter build appbundle --release
             - name: Build apk
               script: |
                 flutter build apk --debug 
