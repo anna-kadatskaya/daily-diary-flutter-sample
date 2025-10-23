@@ -33,10 +33,14 @@ workflows:
                 --build-name=1.0.0 \
                 --build-number=$(($(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID") + 1)) \
                 --export-options-plist=/Users/builder/export_options.plist
+          - name: Flutter build for simulator
+            script: |
+                - flutter build ios --simulator --flavor staging
         artifacts:
           - build/ios/ipa/*.ipa
           - /tmp/xcodebuild_logs/*.log
           - flutter_drive.log
+          - build/ios/iphonesimulator/Runner.app
         publishing:
           email:
             recipients:
