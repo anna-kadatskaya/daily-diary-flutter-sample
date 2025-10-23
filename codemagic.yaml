@@ -74,7 +74,7 @@ workflows:
             - build/**/outputs/**/*.aab
             - build/**/outputs/**/mapping.txt
             - flutter_drive.log
-            - build/outputs/**/*.apk
+            - build/**/outputs/**/*.apk
         publishing:
             email:
                 recipients:
