@@ -51,3 +51,5 @@ workflows:
         instance_type: linux_x2
         environment:
             flutter: stable
+            android_signing:
+                - codemagic
