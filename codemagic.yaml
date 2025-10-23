@@ -69,7 +69,7 @@ workflows:
                 flutter build appbundle --release --android-skip-build-dependency-validation
             - name: Build apk
               script: |
-                ./gradlew assembleDebug 
+                flutter build apk --debug 
         artifacts:
             - build/**/outputs/**/*.aab
             - build/**/outputs/**/mapping.txt
