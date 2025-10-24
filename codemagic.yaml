@@ -48,6 +48,8 @@ workflows:
             notify:
               success: true
               failure: true
+            tester_groups:
+                - QA_group
         
     android-workflow-id:
         name: Android Sample Workflow
@@ -82,3 +84,5 @@ workflows:
                 notify:
                   success: true
                   failure: true
+                tester_groups:
+                    - QA_group
