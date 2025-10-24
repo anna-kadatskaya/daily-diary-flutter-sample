@@ -49,7 +49,7 @@ workflows:
               success: true
               failure: true
             tester_groups:
-                - QA_group
+              - QA_group
         
     android-workflow-id:
         name: Android Sample Workflow
@@ -85,4 +85,4 @@ workflows:
                   success: true
                   failure: true
                 tester_groups:
-                    - QA_group
+                  - QA_group
